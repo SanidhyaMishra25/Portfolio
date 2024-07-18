@@ -1,0 +1,69 @@
+/* 
+  * Student's Name: Sanidhya Mishra
+ * StudentID: 301426349
+ * Date: 2024-05-26
+ */
+
+/* services.css */
+#services {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.pcolor{
+    color: black;
+}
+.servicesTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background-color: grey;
+}
+
+.serviceImg {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .servicesContainer {
+        flex-direction: column;
+    }
+}

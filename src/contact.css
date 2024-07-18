@@ -1,0 +1,99 @@
+/* 
+  * Student's Name: Sanidhya Mishra
+ * StudentID: 301426349
+ * Date: 2024-05-26
+ */
+/* contact.css */
+
+#ffp{
+
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.fname{
+    margin: 1rem 0;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+}
+.emailLink {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.emailLink a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.emailLink a:hover {
+    text-decoration: underline;
+}
+.ftext{
+    margin: 1rem 0;
+    font-size: x-large;
+    background-color: gray;
+
+}
+.linkdeln{
+    margin: 1rem 0;
+    
+    text-align: center;
+    font-size: x-large;
+    color: #007bff;
+
+}
+.link{
+    margin: 1rem 0;
+    font-size: x-large;
+    color: #007bff;
+
+}
+label{
+    font-size:xx-large;
+}
+
+input{
+    font-size: larger;
+}
+
+.submit{
+
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    border: darkcyan;
+    border-radius: 1rem;
+    background: #a4a4a4;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn1 {
+    background-color: #4ec4b8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.3s;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+   /* bottom: -250px;
+    position: absolute;  */
+  }
+  .btn:hover {
+    background-color: white;
+  }
+  .btncolor
+  {
+    background-color: white;
+  }
+p,a{
+    font-size:x-large;
+    text-align: center;
+} 

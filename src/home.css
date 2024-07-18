@@ -1,0 +1,103 @@
+/* 
+  * Student's Name: Sanidhya Mishra
+ * StudentID: 301426349
+ * Date: 2024-05-26
+ */
+/* home.css */
+#intro {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: vertical;
+    background: white;
+    color: #333;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+  }
+  
+  .introContent {
+    max-width: 800px;
+    max-height: 400px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .hello {
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+    color: #007bff;
+  }
+  
+  .introText {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+    display: block;
+  }
+  
+  .introName {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .jobTitle {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: #555;
+    display: block;
+  }
+  
+  .introPara {
+    font-size: 5em;
+    margin-bottom: 20px;
+    margin-top: auto;
+    position: absolute;
+    bottom: -120px;
+    color: #a4a4a4;
+    display: block;
+  }
+  .para {
+    font-size: 2rem;
+    color: #408f87;
+    margin-bottom: 150px;
+    
+  }
+  
+  .bbg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid #007bff;
+  }
+  
+
+  .hire{
+    color: black;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .hello {
+      font-size: 2em;
+    }
+  
+    .introText {
+      font-size: 1.5em;
+    }
+  
+    .jobTitle {
+      font-size: 1.2em;
+    }
+  
+    .introPara {
+      font-size: 1em;
+    }
+  
+    .bbg {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  

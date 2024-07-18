@@ -1,0 +1,58 @@
+/* 
+  * Student's Name: Sanidhya Mishra
+ * StudentID: 301426349
+ * Date: 2024-05-26
+ */
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  padding: 10px 20px;
+  height: 70px; /* Fixed height for the navbar */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.navbar-logo {
+  display: flex;
+  margin-top: 20px;
+  align-items: left;
+  height: 150px; 
+  width: 150px;/* Ensure the logo container takes the full height of the navbar */
+}
+
+.navbar-logo .logo {
+  max-height: fit-content; /* Ensure the logo does not exceed the navbar height */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Optional: Make the navbar fixed at the top */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
