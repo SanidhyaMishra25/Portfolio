@@ -1,45 +1,41 @@
 import React from 'react';
 import {
-  FaReact, FaDocker, FaAws, FaNodeJs, FaGitAlt, FaDatabase, FaTools
+  FaReact, FaDocker, FaAws, FaNodeJs, FaGitAlt, FaHtml5, FaCss3Alt
 } from 'react-icons/fa';
 import {
   SiTypescript, SiJavascript, SiPostgresql, SiMysql, SiRedux,
-  SiKubernetes, SiHeroku, SiNetlify, SiPhp, SiSpringboot,
-  SiRubyonrails, SiGooglecloud
+  SiKubernetes, SiHeroku, SiNetlify, SiSpringboot, SiExpress,
+  SiCsharp, SiMongodb
 } from 'react-icons/si';
 import { DiJava } from 'react-icons/di';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const skills = {
   Frontend: [
-    { name: 'HTML & CSS', desc: 'Web Markup and Styling', icon: <FaReact className="text-red-600" size={30} /> },
-    { name: 'JavaScript', desc: 'Scripting Language', icon: <SiJavascript className="text-red-600" size={30} /> },
-    { name: 'TypeScript', desc: 'Type-safe JavaScript', icon: <SiTypescript className="text-red-600" size={30} /> },
-    { name: 'React', desc: 'Frontend Framework', icon: <FaReact className="text-red-600" size={30} /> },
+    { name: 'HTML & CSS', desc: 'Markup & Styling Languages', icon: <FaHtml5 className="text-orange-500" size={30} /> },
+    { name: 'JavaScript', desc: 'Client-side Scripting Language', icon: <SiJavascript className="text-yellow-500" size={30} /> },
+    { name: 'TypeScript', desc: 'Strongly Typed JavaScript', icon: <SiTypescript className="text-blue-600" size={30} /> },
+    { name: 'React', desc: 'JavaScript Library for UI', icon: <FaReact className="text-cyan-400" size={30} /> },
   ],
   Backend: [
-    { name: 'Ruby on Rails', desc: 'Backend Framework', icon: <SiRubyonrails className="text-red-600" size={30} /> },
-    { name: 'PHP', desc: 'Backend Language', icon: <SiPhp className="text-red-600" size={30} /> },
-    { name: 'Java', desc: 'OOP Language', icon: <DiJava className="text-red-600" size={30} /> },
-    { name: 'Spring Boot', desc: 'Java Framework', icon: <SiSpringboot className="text-red-600" size={30} /> },
-    { name: 'Node.js', desc: 'Backend Runtime', icon: <FaNodeJs className="text-red-600" size={30} /> },
+    { name: 'Node.js', desc: 'JavaScript Runtime Environment', icon: <FaNodeJs className="text-green-600" size={30} /> },
+    { name: 'Express.js', desc: 'Web Framework for Node.js', icon: <SiExpress className="text-gray-500" size={30} /> },
+    { name: 'C#', desc: 'OOP Language for .NET Development', icon: <SiCsharp className="text-purple-600" size={30} /> },
+    { name: 'Spring Boot', desc: 'Java-based Web Framework', icon: <SiSpringboot className="text-green-600" size={30} /> },
   ],
   Databases: [
-    { name: 'MySQL', desc: 'Relational Database', icon: <SiMysql className="text-red-600" size={30} /> },
-    { name: 'PostgreSQL', desc: 'Relational Database', icon: <SiPostgresql className="text-red-600" size={30} /> },
+    { name: 'MySQL', desc: 'Relational Database System', icon: <SiMysql className="text-blue-500" size={30} /> },
+    { name: 'PostgreSQL', desc: 'Advanced Relational Database', icon: <SiPostgresql className="text-blue-700" size={30} /> },
+    { name: 'MongoDB', desc: 'NoSQL Document Database', icon: <SiMongodb className="text-green-500" size={30} /> },
   ],
   'Cloud & DevOps': [
-    { name: 'AWS', desc: 'Cloud Platform', icon: <FaAws className="text-red-600" size={30} /> },
-    { name: 'Docker', desc: 'Containerization', icon: <FaDocker className="text-red-600" size={30} /> },
-    { name: 'GCP', desc: 'Google Cloud Platform', icon: <SiGooglecloud className="text-red-600" size={30} /> },
-    { name: 'Kubernetes', desc: 'Container Orchestration', icon: <SiKubernetes className="text-red-600" size={30} /> },
-    { name: 'Netlify', desc: 'Frontend Deployment', icon: <SiNetlify className="text-red-600" size={30} /> },
-    { name: 'Heroku', desc: 'Cloud Platform for Apps', icon: <SiHeroku className="text-red-600" size={30} /> },
-    { name: 'CI/CD', desc: 'Continuous Integration & Delivery', icon: <FaTools className="text-red-600" size={30} /> }, // replaced SiCicd
+    { name: 'AWS', desc: 'Cloud Services Platform', icon: <FaAws className="text-orange-400" size={30} /> },
+    { name: 'Docker', desc: 'Containerization Platform', icon: <FaDocker className="text-blue-400" size={30} /> },
+    { name: 'Netlify', desc: 'Frontend Hosting Platform', icon: <SiNetlify className="text-teal-400" size={30} /> },
   ],
   'Other Tools & Practices': [
-    { name: 'Git', desc: 'Version Control', icon: <FaGitAlt className="text-red-600" size={30} /> },
-    { name: 'Redux', desc: 'State Management', icon: <SiRedux className="text-red-600" size={30} /> },
+    { name: 'Git', desc: 'Version Control System', icon: <FaGitAlt className="text-orange-600" size={30} /> },
+    { name: 'Redux', desc: 'State Management Library', icon: <SiRedux className="text-purple-500" size={30} /> },
   ],
 };
 
