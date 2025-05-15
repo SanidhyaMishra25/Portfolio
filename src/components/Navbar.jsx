@@ -99,7 +99,7 @@ function Navbar() {
 
       {/* Full-screen Mobile Menu */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-black/90 backdrop-blur-lg animate-slideIn">
+        <div className="fixed inset-0 z-50 flex flex-col bg-black/95 backdrop-blur-lg animate-slideIn overflow-y-auto">
           <div className="flex justify-end p-4">
             <button
               onClick={() => setIsOpen(false)}
@@ -109,12 +109,16 @@ function Navbar() {
               ×
             </button>
           </div>
-          <ul className="flex-1 flex flex-col items-center justify-center gap-8">
+          
+          {/* Mobile Navigation Links */}
+          <ul className="flex flex-col items-center justify-center gap-6 px-4 py-8">
             {navLinks.map((link) => (
               <li key={link.name} className="w-full text-center">
                 <Link
                   to={link.path}
-                  className={`text-xl font-semibold px-6 py-4 block rounded-lg transition-colors duration-200 ${location.pathname === link.path ? 'text-red-500' : 'text-white'} hover:bg-zinc-800/80`}
+                  className={`text-xl font-semibold px-6 py-4 block rounded-lg transition-colors duration-200 ${
+                    location.pathname === link.path ? 'text-red-500' : 'text-white'
+                  } hover:bg-zinc-800/80`}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
@@ -122,23 +126,29 @@ function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="border-t border-zinc-700 py-6 px-8">
-            <h2 className="text-lg text-white font-semibold mb-4">Switch Profile</h2>
-            <ul className="flex flex-col gap-4">
+
+          {/* Mobile Profile Section */}
+          <div className="mt-8 px-4 pb-8">
+            <h2 className="text-xl text-white font-semibold mb-6 text-center">Switch Profile</h2>
+            <div className="grid grid-cols-2 gap-4">
               {profiles.map((profile, index) => (
-                <li
+                <div
                   key={index}
-                  className="flex items-center gap-4 p-3 rounded-lg cursor-pointer hover:bg-zinc-800/80 transition-colors duration-200"
+                  className="flex flex-col items-center p-4 rounded-lg cursor-pointer hover:bg-zinc-800/80 transition-colors duration-200"
                   onClick={() => {
                     navigate(profile.path);
                     setIsOpen(false);
                   }}
                 >
-                  <img src={profile.img} alt={profile.name} className="w-10 h-10 rounded-full border-2 border-white/20" />
-                  <span className="font-medium text-white">{profile.name}</span>
-                </li>
+                  <img 
+                    src={profile.img} 
+                    alt={profile.name} 
+                    className="w-16 h-16 rounded-full border-2 border-white/20 mb-2" 
+                  />
+                  <span className="font-medium text-white text-center">{profile.name}</span>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       )}
