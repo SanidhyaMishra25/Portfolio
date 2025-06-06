@@ -3,7 +3,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Browse from './components/browse'; // ✅ Make sure this exists
+import Browse from './components/browse'; 
 import Adventurer from './pages/adventurer'
 import Recruiter from './pages/recruiter'
 import Developer from './pages/developer'

@@ -227,38 +227,42 @@ function Certificates() {
       </motion.div>
 
       {/* Footer Note */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 0.8 }}
-        className="text-center py-12 bg-gradient-to-t from-black to-transparent"
-      >
-        <motion.p 
-          className="text-gray-500 text-lg"
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 400 }}
-          animate={floatingAnimation}
-        >
-          Continuously learning and expanding my skill set
-        </motion.p>
-        <motion.div 
-          className="mt-4 h-px w-32 mx-auto bg-gradient-to-r from-transparent via-red-600 to-transparent"
-          initial={{ width: 0 }}
-          animate={{ 
-            width: "8rem",
-            opacity: [0.5, 1, 0.5]
-          }}
-          transition={{ 
-            delay: 2, 
-            duration: 1,
-            opacity: {
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }
-          }}
-        />
-      </motion.div>
+<motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 1.5, duration: 0.8 }}
+  className="text-center py-12 bg-gradient-to-t from-black to-transparent"
+>
+  <div className="flex justify-center items-center h-12 overflow-hidden">
+    <motion.p 
+      className="text-gray-500 text-lg inline-block origin-center"
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 400 }}
+      animate={floatingAnimation}
+    >
+      Continuously learning and expanding my skill set
+    </motion.p>
+  </div>
+  
+  <motion.div 
+    className="mt-4 h-px w-[8rem] mx-auto bg-gradient-to-r from-transparent via-red-600 to-transparent"
+    initial={{ width: 0 }}
+    animate={{ 
+      width: "8rem",
+      opacity: [0.5, 1, 0.5]
+    }}
+    transition={{ 
+      delay: 2, 
+      duration: 1,  
+      opacity: {
+        duration: 2,
+        repeat: Infinity,
+        ease: "easeInOut"
+      }
+    }}
+  />
+</motion.div>
+
     </div>
   );
 }
